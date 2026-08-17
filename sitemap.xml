@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://driveandtech.com/</loc></url>
+  <url><loc>https://driveandtech.com/cars.html</loc></url>
+  <url><loc>https://driveandtech.com/technology.html</loc></url>
+  <url><loc>https://driveandtech.com/methodology.html</loc></url>
+  <url><loc>https://driveandtech.com/best-used-cars-under-5000.html</loc></url>
+  <url><loc>https://driveandtech.com/most-reliable-used-cars.html</loc></url>
+  <url><loc>https://driveandtech.com/best-suvs-under-10000.html</loc></url>
+  <url><loc>https://driveandtech.com/best-hybrid-cars-under-15000.html</loc></url>
+  <url><loc>https://driveandtech.com/used-premium-vs-new.html</loc></url>
   <url><loc>https://driveandtech.com/about.html</loc></url>
   <url><loc>https://driveandtech.com/contact.html</loc></url>
 </urlset>
