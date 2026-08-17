@@ -1,23 +1,39 @@
-# Drive & Tech
+# DriveAndTech.com
 
-A modern editorial website for car reviews, technology reviews, comparisons and buying guides.
+Staging rebuild for DriveAndTech.com, an independent UK publication covering cars, technology and gadgets.
 
-## Included
+## Purpose
 
-- Responsive editorial homepage
-- Cars and technology sections
-- Review cards with ratings and reading time
-- Buying guide section
-- Newsletter signup interaction
-- Mobile navigation
-- Persistent dark mode
-- SEO-friendly metadata and semantic HTML
-- No build system required
+This repository is the review and staging version. The production website at `https://driveandtech.com/` is not modified by this repository.
 
-## Local preview
+The design uses the existing DriveAndTech editorial identity and real production article links while removing demo and placeholder content.
 
-Open `index.html` in a browser.
+## Site structure
 
-## Deployment
+- Home
+- Cars
+- Technology & Gadgets
+- Blog / latest guides
+- Editorial Methodology
+- About
+- Contact
+- Privacy Policy
+- Disclaimer
 
-The site is a static HTML/CSS/JavaScript site and can be hosted with GitHub Pages or any static hosting provider.
+## Editorial positioning
+
+DriveAndTech's car coverage focuses on reliability, running costs, safety, practicality, value for money and long-term ownership experience rather than marketing claims.
+
+## Files
+
+- `index.html`: complete staging homepage
+- `styles.css`: responsive design system and page styling
+- `script.js`: mobile navigation and dark-mode behavior
+
+## Preview
+
+Open `index.html` in a browser, or publish the repository with GitHub Pages for a staging URL.
+
+## Production process
+
+Do not overwrite production until the site has been reviewed and approved. After approval, the production deployment can be replaced with the approved repository version.
