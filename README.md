@@ -1,39 +1,22 @@
 # DriveAndTech.com
 
-Staging rebuild for DriveAndTech.com, an independent UK publication covering cars, technology and gadgets.
+A modern, accessible static publishing site for DriveAndTech's UK car buying guides and technology coverage.
 
-## Purpose
+## Included pages
 
-This repository is the review and staging version. The production website at `https://driveandtech.com/` is not modified by this repository.
+- Home, Cars hub, Technology hub and editorial methodology
+- Five standalone buying-guide pages
+- About, Contact and 404 pages
+- Responsive navigation, dark mode, sitemap and robots policy
 
-The design uses the existing DriveAndTech editorial identity and real production article links while removing demo and placeholder content.
+## Content model
 
-## Site structure
+The site is intentionally static: each guide is a self-contained HTML page using a shared design system in `styles.css`. This makes it fast to host on any static platform and straightforward to expand with additional guides.
 
-- Home
-- Cars
-- Technology & Gadgets
-- Blog / latest guides
-- Editorial Methodology
-- About
-- Contact
-- Privacy Policy
-- Disclaimer
+## Deployment
 
-## Editorial positioning
+The repository contains the production-ready site files. Connect it to the chosen static hosting service and map the production domain after reviewing the live preview.
 
-DriveAndTech's car coverage focuses on reliability, running costs, safety, practicality, value for money and long-term ownership experience rather than marketing claims.
+## Local preview
 
-## Files
-
-- `index.html`: complete staging homepage
-- `styles.css`: responsive design system and page styling
-- `script.js`: mobile navigation and dark-mode behavior
-
-## Preview
-
-Open `index.html` in a browser, or publish the repository with GitHub Pages for a staging URL.
-
-## Production process
-
-Do not overwrite production until the site has been reviewed and approved. After approval, the production deployment can be replaced with the approved repository version.
+Open `index.html` in a browser. No build step is required.
