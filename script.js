@@ -1,1 +1,40 @@
-const menuBtn=document.getElementById('menuBtn');const mobileNav=document.getElementById('mobileNav');const themeToggle=document.getElementById('themeToggle');menuBtn?.addEventListener('click',()=>{mobileNav.classList.toggle('open');menuBtn.textContent=mobileNav.classList.contains('open')?'×':'☰'});document.querySelectorAll('.mobile-nav a').forEach(a=>a.addEventListener('click',()=>{mobileNav.classList.remove('open');menuBtn.textContent='☰'}));const saved=localStorage.getItem('driveandtech-theme');if(saved==='dark')document.body.classList.add('dark');themeToggle?.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('driveandtech-theme',document.body.classList.contains('dark')?'dark':'light')});function subscribe(event){event.preventDefault();const input=document.getElementById('email');const button=event.target.querySelector('button');button.textContent='Subscribed ✓';button.disabled=true;input.value='';return false}
+const menuBtn = document.getElementById('menuBtn');
+const mobileNav = document.getElementById('mobileNav');
+const themeToggle = document.getElementById('themeToggle');
+
+function closeMenu() {
+  if (!menuBtn || !mobileNav) return;
+  mobileNav.classList.remove('open');
+  mobileNav.hidden = true;
+  menuBtn.textContent = '☰';
+  menuBtn.setAttribute('aria-expanded', 'false');
+  menuBtn.setAttribute('aria-label', 'Open menu');
+}
+
+menuBtn?.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.toggle('open');
+  mobileNav.hidden = !isOpen;
+  menuBtn.textContent = isOpen ? '×' : '☰';
+  menuBtn.setAttribute('aria-expanded', String(isOpen));
+  menuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+});
+
+document.querySelectorAll('.mobile-nav a').forEach((link) => {
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMenu();
+});
+
+const savedTheme = localStorage.getItem('driveandtech-theme');
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark');
+  themeToggle?.setAttribute('aria-pressed', 'true');
+}
+
+themeToggle?.addEventListener('click', () => {
+  const isDark = document.body.classList.toggle('dark');
+  themeToggle.setAttribute('aria-pressed', String(isDark));
+  localStorage.setItem('driveandtech-theme', isDark ? 'dark' : 'light');
+});
