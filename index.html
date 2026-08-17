@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Drive & Tech brings honest car reviews, technology reviews, buying guides and comparisons. Tested, explained and made useful.">
+  <meta name="theme-color" content="#0b0d10">
+  <title>Drive & Tech | Cars, Tech & Reviews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Drive and Tech home"><span class="brand-drive">DRIVE</span><span>&amp;</span><span class="brand-tech">TECH</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#cars">Cars</a><a href="#tech">Tech</a><a href="#reviews">Reviews</a><a href="#guides">Guides</a><a href="#about">About</a>
+      </nav>
+      <div class="nav-actions"><button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">◐</button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav"><a href="#cars">Cars</a><a href="#tech">Tech</a><a href="#reviews">Reviews</a><a href="#guides">Guides</a><a href="#about">About</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy"><span class="eyebrow">THE WEEKLY EDIT</span><h1>Better decisions.<br><em>Better drives.</em></h1><p>Independent reviews and practical advice on the cars, gadgets and technology that matter.</p><div class="hero-actions"><a class="btn btn-primary" href="#reviews">Explore reviews <span>→</span></a><a class="text-link" href="#about">Meet the editor</a></div></div>
+      <div class="hero-feature">
+        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&q=85" alt="Modern sports car on a road" loading="eager">
+        <div class="feature-overlay"><span class="tag">CAR REVIEW</span><h2>What makes a great daily driver in 2026?</h2><p>Comfort, technology, performance and the details you only notice after living with it.</p><a href="#cars">Read the review →</a></div>
+      </div>
+    </section>
+
+    <section class="ticker"><div class="ticker-inner container"><span>WHAT WE'RE TESTING</span><span>2026 PERFORMANCE CARS</span><span>SMARTPHONES</span><span>EVs</span><span>HOME TECH</span><span>BUYING GUIDES</span></div></section>
+
+    <section class="section container" id="reviews">
+      <div class="section-head"><div><span class="eyebrow">LATEST</span><h2>Fresh from the garage</h2></div><a class="view-all" href="#reviews">View all reviews →</a></div>
+      <div class="article-grid">
+        <article class="card"><a href="#"><img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=900&q=80" alt="Electric car" loading="lazy"></a><div class="card-body"><span class="tag">CAR REVIEW</span><h3><a href="#">The electric SUV that finally gets the family formula right</a></h3><p>Range, charging, comfort and the everyday details that count.</p><div class="meta"><span>8.8/10</span><span>6 min read</span></div></div></article>
+        <article class="card"><a href="#"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80" alt="Smartphone in hand" loading="lazy"></a><div class="card-body"><span class="tag tech">TECH REVIEW</span><h3><a href="#">The phone we would buy when value matters most</a></h3><p>Real-world battery life, camera performance and software experience.</p><div class="meta"><span>9.1/10</span><span>5 min read</span></div></div></article>
+        <article class="card"><a href="#"><img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?auto=format&fit=crop&w=900&q=80" alt="Car dashboard and steering wheel" loading="lazy"></a><div class="card-body"><span class="tag">CAR GUIDE</span><h3><a href="#">Five features worth paying for in your next car</a></h3><p>Skip the gimmicks. These upgrades can make every journey better.</p><div class="meta"><span>Editor's pick</span><span>4 min read</span></div></div></article>
+      </div>
+    </section>
+
+    <section class="split-section" id="cars"><div class="container split-grid"><div class="split-image"><img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1200&q=85" alt="Car driving through a scenic road" loading="lazy"></div><div class="split-copy"><span class="eyebrow">CARS</span><h2>We drive it.<br>Then we tell you what it's really like.</h2><p>Specifications tell you what a car can do. Living with it tells you whether you should buy it. Our reviews focus on both.</p><div class="stat-row"><div><strong>Performance</strong><span>How it drives</span></div><div><strong>Practicality</strong><span>Daily life</span></div><div><strong>Value</strong><span>Worth your money</span></div></div><a class="btn btn-light" href="#">Explore car reviews →</a></div></div></section>
+
+    <section class="section container" id="tech">
+      <div class="section-head"><div><span class="eyebrow">TECH</span><h2>Technology, without the noise</h2></div><a class="view-all" href="#">See all tech →</a></div>
+      <div class="tech-grid"><article class="tech-card"><div class="tech-number">01</div><span class="tag tech">SMARTPHONES</span><h3>What actually matters when choosing a phone?</h3><p>Camera specs are only part of the story. We test the experience you use every day.</p><a href="#">Read more →</a></article><article class="tech-card featured-tech"><div class="tech-number">02</div><span class="tag tech">BUYING GUIDE</span><h3>Build a better home office without wasting money</h3><p>From monitors to keyboards, here is where to spend and where to save.</p><a href="#">Read more →</a></article><article class="tech-card"><div class="tech-number">03</div><span class="tag tech">EXPLAINER</span><h3>AI features: useful upgrade or marketing?</h3><p>A practical look at the features that make a difference.</p><a href="#">Read more →</a></article></div>
+    </section>
+
+    <section class="newsletter"><div class="container newsletter-inner"><div><span class="eyebrow">THE DRIVE &amp; TECH BRIEF</span><h2>Good reviews. No inbox clutter.</h2><p>Get the best new reviews and buying advice once a week.</p></div><form onsubmit="return subscribe(event)"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required><button class="btn btn-primary" type="submit">Subscribe</button></form></div></section>
+
+    <section class="section container" id="guides"><div class="section-head"><div><span class="eyebrow">EDITOR'S PICKS</span><h2>Useful before you buy</h2></div></div><div class="guide-list"><a href="#" class="guide"><span>01</span><div><b>Best cars for long-distance driving</b><small>Comfort, efficiency and technology</small></div><strong>→</strong></a><a href="#" class="guide"><span>02</span><div><b>How to choose your next smartphone</b><small>What matters at every price point</small></div><strong>→</strong></a><a href="#" class="guide"><span>03</span><div><b>EV ownership: what nobody tells you</b><small>Charging, range and real-world costs</small></div><strong>→</strong></a></div></section>
+
+    <section class="about" id="about"><div class="container about-inner"><div><span class="eyebrow">ABOUT DRIVE &amp; TECH</span><h2>Curious about the things that move us.</h2></div><div><p>Drive &amp; Tech is an independent publication about cars, consumer technology and the choices behind them.</p><p>We test products, ask the uncomfortable questions and explain what the specifications actually mean in everyday life.</p><a class="text-link" href="#">More about us →</a></div></div></section>
+  </main>
+
+  <footer><div class="container footer-top"><a class="brand" href="#top"><span class="brand-drive">DRIVE</span><span>&amp;</span><span class="brand-tech">TECH</span></a><p>Cars. Tech. Better choices.</p><div class="socials"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Facebook">FB</a></div></div><div class="container footer-bottom"><span>© 2026 Drive &amp; Tech. All rights reserved.</span><span>Independent reviews. Honest opinions.</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
